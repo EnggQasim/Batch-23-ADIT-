@@ -24,4 +24,4 @@
 - **<br>** : Change line
 - **<hr>** : Horizental Row
 
-## [See more detail of basic Tags click herer!] (https://www.w3schools.com/tags/ref_byfunc.asp)
+## [See more detail of basic Tags click herer!](https://www.w3schools.com/tags/ref_byfunc.asp)
