@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <style>
+        .txt{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #333;
+        }
+
+        #fullName{
+            border-color: blue;
+        }
+
+        label{
+            color:brown;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        form{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+ <form action="" method="" enctype="">
+<table border="0" width="80%" cellpadding="0" cellspacing="" align="center">
+<caption>Registration Form</caption>
+<tr>
+    <td><label for="fullName">Full Name</label></td>
+    <td colspan="3"><input type="text" name="fullName" id="fullName" class="txt"></td>
+</tr>
+
+<tr>
+        <td><label for="fatherName">Father's Name:</label></td>
+        <td colspan="3"><input type="text" name="fatherName" id="fatherName" class="txt"></td>
+        
+</tr>
+    
+<tr>
+        <td><label for="dob">Date of Birth</label></td>
+        <td><input type="date" name="dob" id="dob" class="txt"></td>
+        <td align="center"><label for="cnic">CNIC</label></td>
+        <td><input type="text" name="cnic" id="cnic" class="txt"></td>
+</tr>
+
+<tr>
+        <td><label for="address">Address:</label></td>
+        <td colspan="3"><input type="text" name="address" id="address" class="txt"></td>
+        
+</tr>
+
+<tr>
+        <td><label for="email">Email Address:</label></td>
+        <td><input type="email" name="email" id="email" class="txt"></td>
+        <td><label for="ps">Password</label></td>
+        <td><input type="password" name="ps" id="ps" class="txt"></td>
+</tr>
+
+<tr>
+        <td><label>Hobbies</label></td>
+        <td colspan="3">
+                <input type="checkbox" name="cricket" id="cricket"><label for="cricket">Cricket</label>
+                <input type="checkbox" name="football" id="football"><label for="football">Football</label>
+                <input type="checkbox" name="tennis" id="tennis"><label for="tennis">Tennis</label>
+        </td>
+        
+</tr>
+
+<tr>
+        <td><label for="cell">Phone No</label></td>
+        <td><input type="tel" name="cell" id="cell" class="txt"></td>
+        <td><label for="qualification">Qualification</label></td>
+        <td><input type="text" name="qualification" id="qualification" class="txt"></td>
+</tr>
+
+<tr>
+        <td><label for="country">Country</label></td>
+        <td>
+            <select name="country" id="country" class="txt">
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>China</option>
+            </select>
+
+        </td>
+        <td><label for="city">City</label></td>
+        <td>
+                <select name="city" id="city" class="txt">
+                        <option>Pakistan</option>
+                        <option>India</option>
+                        <option>China</option>
+                </select>
+        </td>
+</tr>
+</table>
+ </form>
+</body>
+</html>
