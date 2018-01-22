@@ -1,0 +1,18 @@
+h1 {
+    background-color:chartreuse;
+    color: black;
+}
+
+h2 {
+    background-color: darkgreen;
+    color: azure;
+}
+
+ul {
+    background-color: antiquewhite;
+}
+.abc {
+    background-color:chocolate;
+    color: white;
+    font-weight: bold;
+}
