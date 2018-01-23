@@ -1,0 +1,33 @@
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: #56ACEE;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px 5px 20px 2px;
+    border: solid 1px #BB0000;
+}
+.logo a{
+    background-color: #3B5998;
+    padding: 10px 15px 10px 15px;
+    color: #FFFC00;
+    margin-left: 10px;
+    
+}
+.logo, nav, li {
+    display: inline-block;
+}
+
+nav ul li a{
+    background-color: #4FC247;
+    color: #FFFC00;
+    padding: 10px 15px 10px 15px;
+}
+
