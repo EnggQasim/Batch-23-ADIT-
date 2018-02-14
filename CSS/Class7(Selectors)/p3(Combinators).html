@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <style>
+    div h1{
+        background-color: brown;
+    }
+
+    div>h1{
+        color: aliceblue;
+    }
+    
+    tr>td>h1{
+        color: orange;
+        background-color: blue;
+    }
+
+   
+
+    div ~ p {
+        background-color: chartreuse;
+    }
+    div + p{
+        background-color: aquamarine;
+    }
+    </style>
+</head>
+<body>
+  <div>
+      <h1>pakistan</h1>
+      <div>
+        <table width="100%" border="1px">
+            <tr>
+                <td>
+                    <h1>Pakistan</h1>
+                </td>
+            </tr> 
+        </table>  
+        <div>
+            <dt><h1>Karachi</h1></dt>
+        </div>
+      </div>
+  </div> 
+  
+  <p>p1</p>
+  <p>p2</p>
+  <p>p3</p>
+  <p>p4</p>
+
+</body>
+</html>

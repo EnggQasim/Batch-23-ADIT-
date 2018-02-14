@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+   <style>
+   @keyframes raja{
+       from{background-color: aqua; border-color:red;}
+       to{background-color: brown; border-color:aqua;}
+   }
+
+   .abc{
+       border: solid 5px #000;
+       animation: raja 10s infinite;
+   }
+   .xyz{
+       border: double 10px #000;
+       border-radius: 20px;
+       margin: 10px auto;
+       animation-name: raja;
+       animation-duration: 2s;
+       
+       animation-fill-mode: backwards;
+   }
+   .img:hover img{
+    transform: scale(2);
+    margin-left: 0px;
+    transition: 2s all;
+   }
+   </style> 
+</head>
+<body>
+    <div class="abc">
+        <h1>Pakistan zinda bad</h1>
+    </div>
+
+
+    <div class="xyz">
+        <h1>Pakistan zinda bad</h1>
+    </div>
+
+    <div class="img">
+        <img src="abc.jpg">
+    </div>
+</body>
+</html>

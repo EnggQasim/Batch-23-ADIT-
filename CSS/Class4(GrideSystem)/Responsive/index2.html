@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: footer1; }
+.item7 { grid-area: footer2; }
+.item8 { grid-area: footer3; }
+.item9 { grid-area: footer4; }
+.item10 { grid-area: footer5; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header menu main main main main main main right footer'
+    'footer1 footer1 footer1 footer1 footer1 footer1 footer1 footer1 footer1 footer1'
+    'footer2 footer2 footer2 footer2 footer3 footer4 footer5 footer5 footer5 footer5';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item6">6</div>
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  
+  <div class="item7">7</div>    
+  <div class="item8">8</div> 
+  <div class="item9">9</div> 
+  <div class="item10">10</div> 
+
+</div>
+
+</body>
+</html>
