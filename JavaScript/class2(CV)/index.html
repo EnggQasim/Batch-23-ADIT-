@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <script>
+    name = window.prompt("Full Name");
+    cnic = window.prompt("You CNIC no#")
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>CV</h1>
+        <hr>
+        <h2><script>window.document.write(name);</script></h2>
+        <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+            To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+            </p>
+    </div><!--endheader-->
+
+    <div class="parent">
+        <div class="left">
+            <label>Name:</label><br>
+            <label>CNIC</label><br>
+        </div><!--endleft-->
+        <div class="right">
+                <label><script>window.document.write(name);</script></label><br>
+                <label><script>window.document.write(cnic);</script></label><br>
+        </div><!--endright-->
+
+    </div><!--endparent-->
+</div>
+</body>
+
+<style>
+    *{padding: 0px; margin: 0px;}
+    .container{
+        max-width: 960px;
+        background-color: #ccc;
+        margin: auto;
+    }
+    .left{
+        grid-area: left;
+    }
+    .right{
+        grid-area: right;
+    }
+    .parent{
+        display: grid;
+        grid-template-areas: 
+        'left right';
+        background-color: #000;
+        color: #fff;
+
+    }
+</style>
+</html>
