@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    function add(){
+        txt1 = document.getElementById("t1").value;
+        txt2 = document.getElementById("t2").value;
+        result =Number(txt1) + Number(txt2);
+       document.getElementById("r").innerHTML = result;
+    }
+
+    function subt(){
+        txt1 = document.getElementById("t1").value;
+        txt2 = document.getElementById("t2").value;
+        result =Number(txt1) - Number(txt2);
+       document.getElementById("r").innerHTML = result;
+    }
+
+    function mul(){
+        txt1 = document.getElementById("t1").value;
+        txt2 = document.getElementById("t2").value;
+        result =Number(txt1) * Number(txt2);
+       document.getElementById("r").innerHTML = result;
+    }
+
+    function div(){
+        txt1 = document.getElementById("t1").value;
+        txt2 = document.getElementById("t2").value;
+        result =Number(txt1) / Number(txt2);
+       document.getElementById("r").innerHTML = result;
+    }
+    </script>
+</head>
+<body>
+    <form>
+        <h1>Calculator</h1>
+        <hr>
+        Enter no1: <input type="text" id="t1"><br>
+        Enter no2: <input type="text" id="t2"><br>
+        Result <label id="r">....</label><br>
+
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="*" onclick="mul()">
+        <input type="button" value="-" onclick="subt()">
+        <input type="button" value="/" onclick="div()">
+    </form>
+</body>
+</html>

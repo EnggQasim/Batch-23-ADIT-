@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <script>
+    var box=1;
+
+    function abc(){
+        if(box == 1){    //True
+            document.getElementById("dis").innerHTML="Pakistan zinda bad";
+            box = 2;
+        }else{          //False
+            document.getElementById("dis").innerHTML="";
+            box = 1;
+        }
+
+
+        setTimeout("abc()", 1000);
+    }
+
+    
+    </script>
+    
+</head>
+<body onload="abc()">
+    
+    <h1 id="dis">..</h1>
+</body>
+</html>

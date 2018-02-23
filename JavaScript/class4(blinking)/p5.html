@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <style>
+    body{
+        transition: all 1s;
+    }
+    </style>
+   <script>
+       var a=1;
+
+   function abc(){
+        if(a==1){
+            document.bgColor="red";
+            a=2;
+        }else if(a==2){
+            document.bgColor="green";
+            a=3;
+        }else if(a==3){
+            document.bgColor="blue";
+            a=4;
+        }else if(a==4){
+            document.bgColor="gray";
+            a=5;
+        }else{
+            document.bgColor="orange";
+            a=1;
+        }
+
+       setTimeout("abc()",1000);
+   }
+   </script>
+</head>
+<body onload="abc()">
+    
+</body>
+</html>
