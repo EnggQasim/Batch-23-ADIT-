@@ -1,0 +1,1 @@
+document.write("<h1>I am Header</h1><a href='index.html'>Home</a>| <a href='about.html'>About</a>|<a href='contact.html'>Contact</a>|<a href='gallery.html'>Gallery</a>");

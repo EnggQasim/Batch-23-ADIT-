@@ -1,0 +1,1 @@
+document.write("<h1>Pakistan call from external javaScript File");

@@ -1,0 +1,1 @@
+document.write("<h1>I am footer</h1>");

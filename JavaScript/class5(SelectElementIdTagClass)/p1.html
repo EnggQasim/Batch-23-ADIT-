@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <script>
+    //Select with Tag
+    function abcT(tag,msg){
+        document.getElementsByTagName(tag)[0].innerHTML=msg;
+    }
+
+    //Select with ID
+    function abcI(tag,msg){
+        document.getElementById(tag).innerHTML=msg;
+    }
+
+    //Select with Class
+    function abcC(tag,msg){
+        document.getElementsByTagName(tag)[0].innerHTML=msg;
+    }
+    </script>
+</head>
+<body>
+    <h1>I am Tage text here change after call Tag selection function.</h1>
+    <h1>I am Tage text here change after call Tag selection function.</h1>
+    <h2>I am Tage text here change after call Tag selection function.</h2>
+    <p>....</p>
+
+
+    <input type="button" value="ChangeWithTageFunction" onclick="abcT('p','Hello')">
+    <input type="button" value="ChangeWithTageFunction" onclick="abcT('h1','Pakistan zinda bad')">
+    <input type="button" value="DirectJavaScriptWrite" onclick="alert('Hello')">
+    <script src="abc.js"></script>
+</body>
+</html>
