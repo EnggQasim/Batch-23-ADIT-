@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <script>
+    var x=1;
+
+    // increament in x
+    function inc(){
+        //x = x + 1;       
+        if(x<10){
+            x++;
+        }
+        document.getElementById("dis").innerHTML="X value is:"+x;
+    }
+
+
+    //Reset Function
+    function reset(){
+        x=0;
+        document.getElementById("dis").innerHTML="X value is:"+x;
+    }
+    </script>
+</head>
+<body>
+    <h1 id='dis'>X value is: </h1>
+    <input type="button" value="Counter increase" onclick="inc()">
+    <input type="button" value="Reset" onclick="reset()">
+</body>
+</html>

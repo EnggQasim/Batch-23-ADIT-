@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <script>
+    //intialize Hours:Minutes:Seconds with 0 (Zero)
+    h=m=s=0;
+    function start(){
+        s++;
+        //Control logic for seconds
+        if(s>59){
+            m++;
+            s=0;
+        }
+        //Control logic for minutes
+        if(m>59){
+            h++;
+            m=0
+        }
+        //Control logic for hours
+        if(h>23){
+            h=0;
+        }
+        // Display H:M:S (hours:Minutes:Seconds)
+        document.getElementById("s").innerHTML = s;
+        document.getElementById("m").innerHTML = m;
+        document.getElementById("h").innerHTML = h;
+
+        //Call function every one seconds 1000=1second
+        setTimeout("start()",1000);
+    }
+    </script>
+</head>
+<body onload="start()">
+ <h1>
+    <label id="h">00</label>:
+    <label id="m">00</label>:
+    <label id="s">00</label>
+ </h1>   
+</body>
+</html>

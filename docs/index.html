@@ -7,9 +7,45 @@
   <style>
   	html,body{height:100%; margin:0px;}	
   </style> 
-</head>
-<body style="background-color:#dddddd;" alink="red" link="white" vlink="orange" text="#333">
+ <script>
+		//intialize Hours:Minutes:Seconds with 0 (Zero)
+		h=m=s=0;
+		function start(){
+			s++;
+			//Control logic for seconds
+			if(s>59){
+				m++;
+				s=0;
+			}
+			//Control logic for minutes
+			if(m>59){
+				h++;
+				m=0
+			}
+			//Control logic for hours
+			if(h>23){
+				h=0;
+			}
+			// Display H:M:S (hours:Minutes:Seconds)
+			document.getElementById("s").innerHTML = s;
+			document.getElementById("m").innerHTML = m;
+			document.getElementById("h").innerHTML = h;
 	
+			//Call function every one seconds 1000=1second
+			setTimeout("start()",1000);
+		}
+		</script>
+	</head>
+	
+	 
+
+<body style="background-color:#dddddd;" alink="red" link="white" vlink="orange" text="#333" onload="start()">
+		<h1>
+				<label id="h">00</label>:
+				<label id="m">00</label>:
+				<label id="s">00</label>
+				<a href=printscrn();">Print Screen</a>
+			 </h1>
 <table border="0" width="960PX" align="center">
 	<tr>
 		<th colspan="4">WELCOME MITI</th>		
