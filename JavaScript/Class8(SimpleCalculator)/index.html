@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="abc.js"></script>
+</head>
+<body>
+    <table border="1px" align="center">
+        <tr>
+            <td colspan="5"><input type="text" id="txt"  maxlength="3" readonly></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="MC" onclick="" class="btn"></td>
+            <td><input type="button" value="MR" onclick="" class="btn"></td>
+            <td><input type="button" value="MS" onclick="" class="btn"></td>
+            <td><input type="button" value="M+" onclick="" class="btn"></td>
+            <td><input type="button" value="M-" onclick="" class="btn"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="&larr;" onclick="" class="btn"></td>
+            <td><input type="button" value="CE" onclick="" class="btn"></td>
+            <td><input type="button" value="C" onclick="" class="btn"></td>
+            <td><input type="button" value="&PlusMinus;" onclick="" class="btn"></td>
+            <td><input type="button" value="&#x221A;" onclick="" class="btn"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7" onclick="insNum(7)" class="btn"></td>
+            <td><input type="button" value="8" onclick="insNum(8)" class="btn"></td>
+            <td><input type="button" value="9" onclick="insNum(9)" class="btn"></td>
+            <td><input type="button" value="/" onclick="operation('/')" class="btn"></td>
+            <td><input type="button" value="%" onclick="" class="btn"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" onclick="insNum(4)" class="btn"></td>
+            <td><input type="button" value="5" onclick="insNum(5)" class="btn"></td>
+            <td><input type="button" value="6" onclick="insNum(6)" class="btn"></td>
+            <td><input type="button" value="*" onclick="operation('*')" class="btn"></td>
+            <td><input type="button" value="&frac12" onclick="" class="btn"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" onclick="insNum(1)" class="btn"></td>
+            <td><input type="button" value="2" onclick="insNum(2)" class="btn"></td>
+            <td><input type="button" value="3" onclick="insNum(3)" class="btn"></td>
+            <td><input type="button" value="-" onclick="operation('-')" class="btn"></td>
+            <td rowspan="2"><input type="button" value="=" onclick="eq()" class="btn equalBtn"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="button" value="0" onclick="insNum(0)" class="btn"></td>
+            <td><input type="button" value="." onclick="" class="btn"></td>
+            <td><input type="button" value="+" onclick="operation('+')" class="btn"></td>
+        </tr>
+        
+    </table>
+</body>
+</html>
