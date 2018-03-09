@@ -1,0 +1,23 @@
+table{
+    border:solid 2px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input[type="button"]{
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+}
+input[value="X"]{
+    color: red;
+}
+input[value="0"]{
+    color: green;
+}
+
+caption{
+    font-size: 200%;
+}

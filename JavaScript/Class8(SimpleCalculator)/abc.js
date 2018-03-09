@@ -20,10 +20,10 @@ function eq(){
     if(opt=="+"){
         document.getElementById("txt").value =   m + Number(document.getElementById("txt").value)
     }else if(opt=="-"){
-
+        document.getElementById("txt").value =   m - Number(document.getElementById("txt").value)
     }else if(opt=="*"){
-
+        document.getElementById("txt").value =   m * Number(document.getElementById("txt").value)
     }else if(opt=="/"){
-
+        document.getElementById("txt").value =   m / Number(document.getElementById("txt").value)
     }
 }
