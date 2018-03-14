@@ -20,6 +20,10 @@
 //Crate Empty Array
 sNames = [];
 
+function enter(){
+
+}
+
 
 function add(){
     document.getElementById("dis").innerHTML="" //Remove old Value
@@ -28,7 +32,15 @@ function add(){
     for(i = (sNames.length-1); i>=0 ; i--){ // Print All Array values in Decending order
         document.getElementById("dis").innerHTML+="<li>"+sNames[i]+"</li>"; //print Eeach Array Elements
     }
-    document.getElementById('user').value=""; // Remove TextBox Value
+    document.getElementById('user').value=""; // Remove TextBox Value-
+}
+
+
+
+document.getElementById('user').onkeydown = function(event) {
+    if (event.keyCode == 13) {
+        add();
+    }
 }
 </script>    
 </body>
