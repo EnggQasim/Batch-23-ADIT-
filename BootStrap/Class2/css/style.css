@@ -1,0 +1,21 @@
+.navbar-inverse{
+    background-color: #A7CF79;
+    border-color: #990000;
+}
+.active a,
+.panel-panel-title,
+.panel-heading{
+    background-color: #990000 !important;
+    
+}
+.panel-body{
+    background-color:#000;
+}
+.navbar a{
+    color:#fff !important;
+}
+
+#myCarousel{
+    border: solid 5px #990000;
+    
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+  <p>Line1</p>  
+  <p>Line2</p>  
+  <p>Line3</p>  
+  <p>Line4</p>  
+  <p>Line5</p>  
+  <h1>Heading1</h1>
+
+  <h2>Hide All</h2>
+<script>
+    // $(Selector).action(function(){});
+
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+
+    $("h1").click(function(){
+        $("p").show();
+    });
+
+});
+
+</script>
+</body>
+</html>

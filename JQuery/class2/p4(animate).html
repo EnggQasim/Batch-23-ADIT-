@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    .btn{
+        background-color: aquamarine;
+        text-align: center;
+        padding: 20px;
+    }
+    .dis{
+        background-color: #333;
+        color: #fff;
+        position: relative;
+    }
+    </style>
+</head>
+<body>
+ <div class="btn" id="btn1">HIDE!</div>
+ <div class="dis" id="dis">
+    pakistan
+ </div>
+
+<script>
+    // $(Selector).action(function(){});
+
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#dis").animate({top: '250px',backgroundColor: 'red'});
+        });
+    }, alert("Now Page Ready"));
+
+</script>
+</body>
+</html>
