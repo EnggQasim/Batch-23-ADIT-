@@ -1,0 +1,19 @@
+creating Virtual host
+
+step1
+go to “C:\Windows\System32\drivers\etc\”.
+open with sublime "host"
+write this code: 127.0.0.1 bhejsms.dev
+-------------------------------------------------------------
+
+Step2
+go to "D:\xampp\apache\conf\extra\" "httpd-vhosts.conf"
+
+<VirtualHost 127.0.0.1:80>
+    DocumentRoot "D:/xampp/htdocs/bhejsms"
+    ServerName bhejsms.dev
+</VirtualHost>
+
+-----------------------------------------------------------------
+step3 finilize you setting and must restart your xampp.
+
